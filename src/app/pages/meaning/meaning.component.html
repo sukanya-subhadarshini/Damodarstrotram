@@ -1,0 +1,65 @@
+<div class="container">
+
+  <h1>📖 Damodar Stotram Meaning</h1>
+
+  <p class="subtitle">
+    Understand the Divine Message of Lord Krishna
+  </p>
+
+  <div class="buttons">
+
+    
+
+    <button (click)="language='hindi'">
+      हिन्दी
+    </button>
+    <button (click)="language='english'">
+      English
+    </button>
+
+    <button (click)="language='odiya'">
+      ଓଡ଼ିଆ
+    </button>
+
+  </div>
+
+  <div class="card">
+
+    
+    <pre *ngIf="language==='hindi'">
+{{ meanings.hindi }}
+    </pre>
+
+    <pre *ngIf="language==='english'">
+{{ meanings.english }}
+    </pre>
+
+    <pre *ngIf="language==='odiya'">
+{{ meanings.odiya }}
+    </pre>
+
+  </div>
+  <footer class="footer">
+
+  <h3>🙏 RADHE RADHE 🙏</h3>
+
+  <p>
+    Damodar Stotram – A devotional platform for learning and
+    understanding Lord Krishna's divine prayers.
+  </p>
+
+  <p>
+    Available in multiple languages for spiritual learning and accessibility.
+  </p>
+
+  <p>
+    Designed & Developed by Sukanya Subhadarshini | © 2026
+  </p>
+
+  <p class="credit">
+    Made with ❤️ using Angular
+  </p>
+
+</footer>
+
+</div>

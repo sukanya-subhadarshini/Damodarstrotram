@@ -1,0 +1,226 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Georgia, serif;
+  background:#020b1d;
+}
+
+/* Main Container */
+
+.container{
+
+  min-height:100vh;
+
+  text-align:center;
+
+  padding:60px 20px;
+
+  background:linear-gradient(
+      90deg,
+      #021033,
+      #08152d,
+      #101d38
+  );
+}
+
+/* Heading */
+
+.container h1{
+
+  font-size:5rem;
+
+  color:#f5a623;
+
+  font-style:italic;
+
+  margin-bottom:15px;
+
+  text-shadow:
+  0 0 10px rgba(245,166,35,.3);
+}
+
+.subtitle{
+
+  color:white;
+
+  font-size:2rem;
+
+  font-style:italic;
+
+  margin-bottom:40px;
+}
+
+/* Buttons */
+
+.buttons{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-bottom:40px;
+}
+
+.buttons button{
+
+  background:#737373;
+
+  color:white;
+
+  border:none;
+
+  padding:16px 40px;
+
+  border-radius:15px;
+
+  font-size:1.3rem;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.buttons button:hover{
+
+  background:#f5a623;
+
+  color:#000;
+
+  transform:translateY(-4px);
+}
+
+/* Lyrics Card */
+
+.card{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  background:rgba(255,255,255,.05);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  border-radius:25px;
+
+  padding:35px;
+
+  text-align:left;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.4);
+}
+
+.card pre{
+
+  color:white;
+
+  font-size:1.1rem;
+
+  line-height:2.2;
+
+  white-space:pre-wrap;
+
+  font-family:'Segoe UI',sans-serif;
+}
+
+/* Footer */
+
+.footer{
+
+  background:#010814;
+
+  color:white;
+
+  text-align:center;
+
+  padding:30px;
+
+  border-top:1px solid rgba(255,255,255,.1);
+}
+
+.footer h3{
+
+  color:#f5a623;
+
+  margin-bottom:15px;
+}
+
+.footer p{
+
+  margin:10px 0;
+
+  line-height:1.8;
+}
+
+.credit{
+
+  color:#f5a623;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .container h1{
+      font-size:3rem;
+  }
+
+  .subtitle{
+      font-size:1.3rem;
+  }
+
+  .buttons button{
+      width:220px;
+  }
+
+  .card pre{
+      font-size:15px;
+  }
+}
+.navbar{
+
+  background:#010814;
+
+  padding:25px 50px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+}
+
+.logo{
+
+  color:#f5a623;
+
+  font-size:2rem;
+
+  font-style:italic;
+
+  font-weight:bold;
+}
+
+.nav-links a{
+
+  color:white;
+
+  text-decoration:none;
+
+  margin-left:30px;
+
+  font-size:1.2rem;
+}
